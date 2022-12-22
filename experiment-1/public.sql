@@ -41,3 +41,5 @@ Shah', 'Baroda',540,'samsung', 85,150);
 
 
 SELECT * FROM salesmen;
+
+drop Table salesmen;public
