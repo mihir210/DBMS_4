@@ -40,7 +40,6 @@ CREATE TABLE ORDERS(
 
 
 
-SELECT * FROM salesmen;
-
-drop Table salesmen;
-DROP Table orders;
+DROP Table IF EXISTS salesmen;
+DROP TABLE IF EXISTS customers;
+DROP TABLE IF EXISTS orders;
