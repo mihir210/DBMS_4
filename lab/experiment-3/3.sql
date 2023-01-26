@@ -27,7 +27,7 @@ INSERT INTO cust VALUES('c102', 'mihir', 'student');
 
 --Find out the name of all the salesmen having ‘a’ as the second letter in their names.
 
-SELECT * FROM salesmen WHERE sname like '_A%';
+SELECT sname FROM salesmen WHERE sname like '_A%';
 
 
 -- List all the information of customers whose state contains null value.
