@@ -7,7 +7,7 @@ SELECT customers.cid,cname,city,o_amt from orders JOIN customers ON customers.ci
 
 --Display salesman details with their order details.
 
-SELECT salesmen.* FROM salesmen JOIN orders ON salesmen.sid = orders.sid;
+SELECT salesmen.*, orders.*FROM salesmen JOIN orders ON salesmen.sid = orders.sid;
 
 --Display customer info of salesman S102 and S105. 
 
