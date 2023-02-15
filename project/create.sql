@@ -11,8 +11,8 @@ CREATE Table Librarian(
 
 CREATE TABLE Author(
    Author_code numeric(10) PRIMARY KEy,
-   Author_qualification VARCHAR(20) not null,
-   Author_name VARCHAR(20) not null
+   Author_qualification VARCHAR(50) not null,
+   Author_name VARCHAR(50) not null
 );
 
 
@@ -40,17 +40,20 @@ CREATE Table MEMBER(
    MEM_ID NUMERIC(10) PRIMARY KEY,
    F_NAME VARCHAR(20) NOT NULL,
    l_NAME VARCHAR(15) NOT NULL,
-   STATE VARCHAR(10),
+   STATE VARCHAR(30),
    PINCODE NUMERIC (10),
-   CITY VARCHAR(10)
+   CITY VARCHAR(40)
 );
 
 CREATE Table MEMBERMOBILE(
    
-   MEM_ID NUMERIC(10) PRIMARY KEY,
-   MOBILE_NO NUMERIC(10),
+   MEM_ID NUMERIC(10) ,
+   MOBILE_NO NUMERIC(20) primary key ,
    FOREIGN KEY (MEM_ID) REFERENCES MEMBER(MEM_ID)
 );
+
+drop table membermobile;
+
 
 CREATE TABLE REQUEST (
    MEM_ID NUMERIC(10) ,
@@ -69,10 +72,12 @@ CREATE TABLE EMPLOYEEADD(
 );
 
 CREATE TABLE EMPLOYEEMOBILE(
-   EMP_ID NUMERIC(10) PRIMARY KEY,
-   MOBILE_NO NUMERIC(10),
+   EMP_ID NUMERIC(10) ,
+   MOBILE_NO NUMERIC(20) primary key ,
    foreign key (EMP_ID) references EMPLOYEEADD(emp_id)
 );
+
+drop table employeemobile;
 
 
 CREATE TABLE PUBLISHER(
@@ -89,4 +94,11 @@ CREATE  table Library(
   Library_address VARCHAR(50),
   Library_name VARCHAR(20) not NULL
 );
+
+create table physics(
+    Book_ID numeric(10),
+    foreign key (Book_ID) references books(Book_ID)
+
+);
+
 
