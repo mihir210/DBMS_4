@@ -20,6 +20,7 @@ CREATE TABLE Author(
 CREATE Table Books(
       
      Book_ID NUMERIC(10) primary key ,
+     Book_name varchar(40),
      status VARCHAR(20),
      Author_code NUMERIC(10),
      Library_id NUMERIC(10),
@@ -33,6 +34,7 @@ CREATE Table Books(
       
 );
 
+drop  table books;
 
 
 CREATE Table MEMBER(
@@ -96,9 +98,16 @@ CREATE  table Library(
 );
 
 create table physics(
-    Book_ID numeric(10),
-    foreign key (Book_ID) references books(Book_ID)
+                        Book_ID numeric(10) primary key ,
+                        foreign key (Book_ID) references books(Book_ID),
+                        Physics_book varchar(20)
+);
 
+
+create table chemistry(
+                        Book_ID numeric(10) primary key,
+                        foreign key (Book_ID) references books(Book_ID),
+                        chemistry_book varchar(20)
 );
 
 

@@ -117,5 +117,30 @@ VALUES
     (810, 310);
 
 
+INSERT INTO books (book_id, status, author_code, library_id, publisher_code, emp_id, book_name)
+VALUES
+    (901, 'available', 601, 501, 101, 802, 'Introduction to Physics'),
+    (902, 'not available', 602, 503, 102, 803, 'Advanced Calculus'),
+    (903, 'available', 603, 502, 103, 804, 'Quantum Mechanics'),
+    (904, 'not available', 604, 501, 104, 805, 'Organic Chemistry'),
+    (905, 'available', 605, 503, 105, 806, 'Linear Algebra'),
+    (906, 'available', 606, 501, 106, 807, 'Thermodynamics'),
+    (907, 'not available', 607, 502, 107, 808, 'Physical Chemistry'),
+    (908, 'available', 608, 503, 108, 809, 'Topology'),
+    (909, 'not available', 609, 501, 109, 810, 'Electromagnetism'),
+    (910, 'available', 610, 502, 102, 801, 'Discrete Mathematics');
 
+
+INSERT INTO publisher (publisher_code, publisher_name, publisher_country)
+VALUES
+    (101, 'Penguin Random House', 'United States'),
+    (102, 'HarperCollins Publishers', 'United Kingdom'),
+    (103, 'Simon & Schuster', 'United States'),
+    (104, 'Hachette Livre', 'France'),
+    (105, 'Macmillan Publishers', 'United States'),
+    (106, 'Bloomsbury Publishing', 'United Kingdom'),
+    (107, 'Wiley', 'United States'),
+    (108, 'Oxford University Press', 'United Kingdom'),
+    (109, 'Springer Nature', 'Germany'),
+    (110, 'Cambridge University Press', 'United Kingdom');
 
