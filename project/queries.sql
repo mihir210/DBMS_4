@@ -26,7 +26,7 @@ SELECT * FROM Library;
 
 
 
--- Select all columns from the members table where the mobile_no is between 8000000000 and 8999999999:
+-- Select all columns from the members table where the mobile_no is between 5551111000 and 555111109:
 
 
 
@@ -103,7 +103,7 @@ WHERE l.library_name = 'Public Library';
 
 
 
-SELECT * FROM books WHERE book_name LIKE 'T%';
+    SELECT * FROM books WHERE book_name LIKE 'T%';
 
 
 
